@@ -1,0 +1,9 @@
+sosnowechwile/
+├── frontend/
+│   ├── index.html
+│   └── style.css
+├── backend/
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
+└── README.md
