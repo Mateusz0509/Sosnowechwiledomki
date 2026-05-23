@@ -4,253 +4,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sosnowe Chwile – domki z drewna sosnowego</title>
-  <meta name="description" content="Sosnowe Chwile – ekologiczne domki z drewna sosnowego, handlowe i rodzinne, wykonane z fachową dbałością o szczegóły." />
+  <meta name="description" content="Sosnowe Chwile – ekologiczne domki z drewna sosnowego, projektowane i budowane z dbałością o naturę oraz komfort." />
+  <meta name="theme-color" content="#386641" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="header" id="home">
-    <nav class="nav container">
-      <a href="#home" class="nav__logo">Sosnowe<span>Chwile</span></a>
-      <ul class="nav__menu">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Główna nawigacja">
+      <a class="brand" href="#home">Sosnowe<span>Chwile</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="#o-nas">O nas</a></li>
         <li><a href="#uslugi">Usługi</a></li>
         <li><a href="#galeria">Galeria</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
-
     <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Domki z drewna sosnowego</h1>
-        <p class="hero__text">
-          Stworzone z natury, dla natury. Budujemy domki z sosny, które wpisują się w otoczenie i tworzą chwile, które trwają.
-        </p>
-        <a href="#kontakt" class="btn btn--primary hero__btn">Zamów konsultację</a>
+      <div class="container hero__content">
+        <p class="eyebrow">Domki z drewna sosnowego</p>
+        <h1>Naturalne domki, które tworzą spokojne miejsce do życia i wypoczynku</h1>
+        <p class="hero__text">Projektujemy i budujemy domki z sosny, łącząc estetykę, trwałość i ekologiczne podejście do każdej realizacji.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#kontakt">Zapytaj o wycenę</a>
+          <a class="btn btn--ghost" href="#galeria">Zobacz realizacje</a>
+        </div>
       </div>
     </section>
   </header>
-
-  <main>
+  <main id="main">
     <section id="o-nas" class="section">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">O nas</h2>
-          <p class="section__subtitle">
-            Sosnowe domki z sosny – od projektu po montaż
-          </p>
-        </header>
-
-        <div class="about__grid">
-          <div class="about__text">
-            <p>
-              W Sosnowych Chwilach tworzymy <strong>domki z drewna sosnowego</strong>, od <em>domków letniskowych</em> po <em>strukture handlowe</em> zamontowane na terenach rekreacyjnych.
-            </p>
-            <p>
-              Wybieramy wyłącznie sosnę z zrównoważonego gospodarstwa leśnego, dbając o trwałość, estetykę i ekologiczny charakter każdego projektu.
-            </p>
-            <p>
-              Oferujemy pełen cykl realizacji: konsultacja, projekt, produkcja i montaż na miejscu. Naszym celem jest tworzenie spokojnych, naturalnych przestrzeni, w których warto spędzić chwilę.
-            </p>
-          </div>
-          <div class="about__image">
-            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b9bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Domki z drewna sosnowego" />
-          </div>
+      <div class="container about">
+        <div>
+          <p class="section-kicker">O nas</p>
+          <h2>Budowa domków z sosny z naciskiem na jakość i naturę</h2>
+          <p>Tworzymy sosnowe domki z drewna pozyskiwanego odpowiedzialnie, dbając o solidność konstrukcji, przyjemny klimat wnętrz i spójność z otoczeniem.</p>
+          <p>W ofercie znajdują się domki rekreacyjne, użytkowe oraz indywidualne projekty dopasowane do działki, stylu i budżetu.</p>
+        </div>
+        <div class="about__card">
+          <h3>Dlaczego sosna?</h3>
+          <ul>
+            <li>Naturalny wygląd i ciepły charakter.</li>
+            <li>Dobra izolacyjność i trwałość.</li>
+            <li>Materiał przyjazny środowisku.</li>
+          </ul>
         </div>
       </div>
     </section>
-
     <section id="uslugi" class="section section--alt">
       <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Nasze usługi</h2>
-          <p class="section__subtitle">
-            Kompleksowa obsługa budowy domków z drewna sosnowego
-          </p>
-        </header>
-
-        <ul class="services__grid">
-          <li class="service__card">
-            <div class="service__icon">
-              <i class="fas fa-house-chimney"></i>
-            </div>
-            <h3 class="service__title">Budowa domków z sosny</h3>
-            <p class="service__text">
-              Handlowe i rodzinne domki z drewna sosnowego, zaprojektowane pod Twoje potrzeby i otoczenie.
-            </p>
-          </li>
-          <li class="service__card">
-            <div class="service__icon">
-              <i class="fas fa-ruler"></i>
-            </div>
-            <h3 class="service__title">Projekt i konsultacja</h3>
-            <p class="service__text">
-              Indywidualne projekty dopasowane do terenu, stylu i funkcji domku.
-            </p>
-          </li>
-          <li class="service__card">
-            <div class="service__icon">
-              <i class="fas fa-tools"></i>
-            </div>
-            <h3 class="service__title">Montaż i instalacja</h3>
-            <p class="service__text">
-              Kompletny montaż na miejscu, wraz z wykończeniem i podstawowymi instalacjami.
-            </p>
-          </li>
-          <li class="service__card">
-            <div class="service__icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3 class="service__title">Naprawa i modernizacja</h3>
-            <p class="service__text">
-              Restauracja i modernizacja istniejących domków z drewna sosnowego.
-            </p>
-          </li>
-        </ul>
+        <p class="section-kicker">Usługi</p>
+        <h2>Kompleksowa obsługa od projektu do montażu</h2>
+        <div class="services-grid">
+          <article class="card service-card"><div class="icon">🌲</div><h3>Budowa domków z sosny</h3><p>Realizujemy domki całoroczne i sezonowe, dopasowane do potrzeb inwestora.</p></article>
+          <article class="card service-card"><div class="icon">🧭</div><h3>Projekt i doradztwo</h3><p>Pomagamy dobrać układ, metraż oraz rozwiązania techniczne.</p></article>
+          <article class="card service-card"><div class="icon">🔨</div><h3>Montaż i wykończenie</h3><p>Zapewniamy sprawną realizację i estetyczne wykończenie na miejscu.</p></article>
+          <article class="card service-card"><div class="icon">♻️</div><h3>Modernizacja</h3><p>Odświeżamy i ulepszamy istniejące domki z drewna sosnowego.</p></article>
+        </div>
       </div>
     </section>
-
     <section id="galeria" class="section">
       <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Galeria</h2>
-          <p class="section__subtitle">
-            Zobacz, jak wyglądają nasze sosnowe domki
-          </p>
-        </header>
-
-        <div class="gallery__grid">
-          <div class="gallery__item">
-            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b9bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Duży domki z drewna sosnowego" />
-          </div>
-          <div class="gallery__item">
-            <img src="https://images.unsplash.com/photo-1590086011886-0f5b903b1c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mały domek z drewna sosnowego" />
-          </div>
-          <div class="gallery__item">
-            <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Domki w lesie" />
-          </div>
-          <div class="gallery__item">
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Domki z patyną naturalnego drewna" />
-          </div>
-          <div class="gallery__item">
-            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Domki z balkonem z drewna" />
-          </div>
-          <div class="gallery__item">
-            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Domki z drewna w letnim ośrodku" />
-          </div>
+        <p class="section-kicker">Galeria</p>
+        <h2>Wybrane inspiracje i realizacje</h2>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b9bf?auto=format&fit=crop&w=1200&q=80" alt="Drewniany domek w naturze">
+          <img src="https://images.unsplash.com/photo-1590086011886-0f5b903b1c3b?auto=format&fit=crop&w=1200&q=80" alt="Mały domek z drewna w lesie">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Dom z drewnianą elewacją">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80" alt="Nowoczesny domek w zielonym otoczeniu">
         </div>
       </div>
     </section>
-
     <section id="kontakt" class="section section--alt">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__title">Skontaktuj się z nami</h2>
-          <p class="section__subtitle">
-            Napisz, zadzwoń lub odwiedź nas – zaprojektujemy z Tobą idealny domek z sosny.
-          </p>
-        </header>
-
-        <div class="contact__grid">
-          <div class="contact__info">
-            <p><i class="fas fa-map-marker-alt"></i> Warszawa, Polska</p>
-            <p><i class="fas fa-phone"></i> +48 123 456 789</p>
-            <p><i class="fas fa-envelope"></i> kontakt@sosnowechwile.pl</p>
+      <div class="container contact">
+        <div>
+          <p class="section-kicker">Kontakt</p>
+          <h2>Porozmawiajmy o Twoim projekcie</h2>
+          <p>Wypełnij formularz, a odezwiemy się z odpowiedzią i wstępną propozycją współpracy.</p>
+          <div class="contact-info">
+            <p><strong>Adres:</strong> Warszawa, Polska</p>
+            <p><strong>E-mail:</strong> kontakt@sosnowechwile.pl</p>
+            <p><strong>Telefon:</strong> +48 123 456 789</p>
           </div>
-          <form class="contact__form" action="#" method="post">
-            <div class="form__group">
-              <label for="imie">Imię i nazwisko</label>
-              <input type="text" id="imie" name="imie" required />
-            </div>
-            <div class="form__group">
-              <label for="email">E‑mail</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form__group">
-              <label for="telefon">Telefon</label>
-              <input type="tel" id="telefon" name="telefon" />
-            </div>
-            <div class="form__group">
-              <label for="wiadomosc">Wiadomość</label>
-              <textarea id="wiadomosc" name="wiadomosc" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary">Wyślij wiadomość</button>
-          </form>
         </div>
+        <form class="contact-form">
+          <label for="imie">Imię i nazwisko</label>
+          <input id="imie" name="imie" type="text" required>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+          <label for="telefon">Telefon</label>
+          <input id="telefon" name="telefon" type="tel">
+          <label for="wiadomosc">Wiadomość</label>
+          <textarea id="wiadomosc" name="wiadomosc" rows="5" required></textarea>
+          <button class="btn btn--primary" type="submit">Wyślij wiadomość</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
-
   <footer class="footer">
-    <div class="container">
-      <p class="footer__text">
-        &copy; 2026 Sosnowe Chwile – domki z drewna sosnowego. Wszelkie prawa zastrzeżone.
-      </p>
-      <nav class="footer__nav">
-        <a href="#o-nas">O nas</a>
-        <a href="#uslugi">Usługi</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
+    <div class="container footer__inner">
+      <p>© 2026 Sosnowe Chwile</p>
+      <a href="#home">Wróć na górę</a>
     </div>
   </footer>
-</body>
-</html>
-<!-- Skrypt JS – minimalna walidacja formularza -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".contact__form");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // zatrzymaj domyślne wysyłanie
-
-      // Pobierz wartości
-      const imie = document.getElementById("imie").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const telefon = document.getElementById("telefon").value.trim();
-      const wiadomosc = document.getElementById("wiadomosc").value.trim();
-
-      let errors = [];
-
-      // Walidacja „Imię i nazwisko”
-      if (imie.length === 0) {
-        errors.push("Imię i nazwisko jest wymagane.");
-      }
-
-      // Walidacja e‑mail
-      const emailRegexp = /^[^s@]+@[^s@]+.[^s@]+$/;
-      if (email.length === 0) {
-        errors.push("E‑mail jest wymagany.");
-      } else if (!emailRegexp.test(email)) {
-        errors.push("Podaj poprawny adres e‑mail.");
-      }
-
-      // Telefon (opcjonalny, ale jeśli jest – musi być OK)
-      if (telefon && !/^+?d{6,}$/.test(telefon.replace(/[s-()]/g, ""))) {
-        errors.push("Numer telefonu musi zawierać co najmniej 6 cyfr.");
-      }
-
-      // Wiadomość (min. np. 10 znaków)
-      if (wiadomosc.length === 0) {
-        errors.push("Wiadomość jest wymagana.");
-      } else if (wiadomosc.length < 10) {
-        errors.push("Wiadomość powinna mieć co najmniej 10 znaków.");
-      }
-
-      // Jeśli są błędy – pokaż komunikaty
-      if (errors.length > 0) {
-        alert("Niektóre pola wymagają poprawy:
-
-- " + errors.join("
-- "));
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+    toggle?.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    const form = document.querySelector('.contact-form');
+    const note = document.querySelector('.form-note');
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      if (!data.imie || !data.email || !data.wiadomosc || data.wiadomosc.trim().length < 10) {
+        note.textContent = 'Uzupełnij wymagane pola i wpisz wiadomość min. 10 znaków.';
         return;
       }
-
-      // Jeśli wszystko OK, możesz dodać np. symulację wysyłki lub przekierowanie
-      alert("Formularz został poprawnie wypełniony. W wersji produkcyjnej tu wysyłasz go do backendu.");
-      form.reset(); // wyczyść pola
+      try {
+        const res = await fetch('https://TWOJ-BACKEND.onrender.com/contact', {
+          method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)
+        });
+        const json = await res.json();
+        note.textContent = json.message || (json.success ? 'Wiadomość wysłana.' : 'Błąd wysyłki.');
+        if (json.success) form.reset();
+      } catch {
+        note.textContent = 'Brak połączenia z backendem.';
+      }
     });
-  });
-</script>
+  </script>
+</body>
+</html>
